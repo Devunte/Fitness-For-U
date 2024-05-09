@@ -1,4 +1,4 @@
-// User Model Page
+// User Mod Page
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
