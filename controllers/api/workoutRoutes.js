@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const router = require('express').Router()
+=======
+const router = require('express').Router();
+>>>>>>> 0ddfe523f564208aa06ad3d2c09bad690a9e8585
 
 const { Workout } = require('../../models')
 
@@ -48,4 +52,4 @@ router.delete('/:id', async (req, res) => {
     }
   });
 
-module.exports = router
+module.exports = router;

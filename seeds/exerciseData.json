@@ -1,17 +1,20 @@
 [
     {
-        "exercise_category": "" // Example : Upper Body, Arms, Legs, Lower Body, etc....
+        "exercise_category": "Back"
     },
     {
-        "exercise_category": ""
+        "exercise_category": "Core"
     },
     {
-        "exercise_category": ""
+        "exercise_category": "Arms"
     },
     {
-        "exercise_category": ""
+        "exercise_category": "Legs"
     },
     {
-        "exercise_category": ""
+        "exercise_category": "Shoulders"
     },
+    {
+        "exercise_category": "Cardio"
+    }
 ]
