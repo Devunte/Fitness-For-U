@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Bicep Curl",
+        "description": "Bicep Exercises. Biceps exercises. Build sleeve-splitting guns with these exercises.",
+        "exercise_id": 3
+    },
+    {
+        "name": "Overhead Press",
+        "description": "Standing dumbbell shoulder press. Workout Movement Standing Dumbbell. Lifting weight overhead from a standing position engages all the muscles of your shoulders ",
+        "exercise_id": 5
+    },
+    {
+        "name": "Squats",
+        "description": "Front Squat. Set a barbell on a power rack at about shoulder height. Grab the power with an overhand grip at shoulder width and raise your elbows until your ..",
+        "exercise_id": 4
+    }
+]
