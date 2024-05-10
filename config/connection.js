@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-dd
-=======
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
@@ -21,4 +18,3 @@ if (process.env.DB_URL) {
 }
 
 module.exports = sequelize;
->>>>>>> 1d5121b53d925e8c0a6153541b16c58acc6e3875
