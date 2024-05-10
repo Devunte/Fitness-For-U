@@ -1,5 +1,4 @@
 const router = require('express').Router();
-<<<<<<< HEAD
 const { Exercise, User, Workout } = require('../models');
 
 
@@ -69,8 +68,3 @@ module.exports = router;
 
     
 
-=======
-
-
-module.exports = router;
->>>>>>> 0ddfe523f564208aa06ad3d2c09bad690a9e8585
