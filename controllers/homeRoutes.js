@@ -28,9 +28,20 @@ router.get('/exercise/:id', async (req,res) => {
     
         req.render('exercise', {
             ...exercise,
-        })
+        });
+    } catch (err) {
+        res.status(500).json(err);
     }
-})
+});
+
+router.get('/')
+
+
+
+
+
+
+module.exports = router;
 
     
 
