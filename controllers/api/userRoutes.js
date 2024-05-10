@@ -1,14 +1,4 @@
 const router = require('express').Router();
-<<<<<<< HEAD
-
-
-
-
-
-
-
-module.exports = router;
-=======
 const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
@@ -69,4 +59,3 @@ router.post('/logout', (req, res) => {
 });
 
 module.exports = router;
->>>>>>> fa5ac3e1ba8160d4ccec8737db771f4c0ab5a9f1
