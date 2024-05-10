@@ -1,6 +1,6 @@
-const { model, DataTypes } = require('sequelize')
+const { Model, DataTypes } = require('sequelize')
 const sequelize = require('../config/connection')
-class Workout extends model{}
+class Workout extends Model {}
 
 Workout.init(
     {
