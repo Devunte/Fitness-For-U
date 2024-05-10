@@ -26,7 +26,7 @@ router.get('/exercise/:id', async (req,res) => {
         });
         const exercise = exerciseData.get({ plain: true });
     
-        req.render('exercise', {
+        res.render('exercise', {
             ...exercise,
         });
     } catch (err) {
@@ -34,15 +34,21 @@ router.get('/exercise/:id', async (req,res) => {
     }
 });
 
-router.get('workout/:id', async (req,res) => {
+router.get('/workout/:id', async (req,res) => {
     try{
         const workoutData = await Workout.findByPk(req.params.id, {
             
-        })
-    }
-})
+        });
+        const workout = workoutData.get({ plain: true });
 
-router.get('/')
+        res.render('workout',{
+            ...workout,
+        });
+    } catch(err) {
+        res.status(500).json(err);
+    }
+});
+
 
 
 
