@@ -34,6 +34,14 @@ router.get('/exercise/:id', async (req,res) => {
     }
 });
 
+router.get('workout/:id', async (req,res) => {
+    try{
+        const workoutData = await Workout.findByPk(req.params.id, {
+            
+        })
+    }
+})
+
 router.get('/')
 
 
