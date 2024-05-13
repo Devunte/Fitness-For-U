@@ -15,6 +15,6 @@ Exercise.hasMany(Workout, {
     foreignKey: 'exercise_id',
     onDelete: 'CASCADE',
 
-})
+});
 
 module.exports = { User, Exercise, Workout };
