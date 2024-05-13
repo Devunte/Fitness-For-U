@@ -14,19 +14,14 @@ router.post('/', async (req, res) => {
     res.status(400).json(err); }
 })
 
-router.get('/', async (req, res) => {
-    try {
-      const workouts = await Workout.findAll();
-
-      if (!workouts) {
-        return res.status(404).json({ message: 'No workout data found' });
-      }
-
-      res.status(200).json(workouts);
-    } catch (error) {
-      res.status(500).json({ error: error.message });
-    }
-  });
+router.get('/:id', async (req, res) => {
+  try {
+    const workoutsData = await Workout.findAll();
+    res.status(200).json(workoutsData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.delete('/:id', async (req, res) => {
     try {
