@@ -1,3 +1,28 @@
+{{log this}}
 <div>
     <h2>Welcome {{name}}</h2>
+    <div>
+        {{#each exercises}}
+            <div class="exercise">
+                <a href="/exercise/{{id}}">
+                <h2>{{exercise_category}}</h2>
+                <img src="{{href_icon}}" alt="">
+                </a>
+                <p></p>
+                {{#if workouts.length}}
+                    <ul>
+                        {{#each workouts}}
+                            <li>{{this.name}} - {{this.description}}</li>
+                        {{/each}}
+                    </ul>
+                {{else}}
+                    <p>No workouts found for this exercise.</p>
+                {{/if}}
+            </div>
+        {{/each}}
+        {{!-- {{#each exercises}}
+        <p>{{exercise_category}}</p>
+        <img src="{{href_icon}}" alt="">
+        {{/each}} --}}
+    </div>
 </div>

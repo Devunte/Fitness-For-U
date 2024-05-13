@@ -5,26 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness For U</title>
+  <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header>
-      <h1>
-        <span role="img" aria-label="money">🏋🏼</span>
-        What is Fitness For U?
-        <span role="img" aria-label="money">🏋🏽‍♀️</span>
-        <h3>
-          Fitness For U is a website where you can lookup gym or at home workouts
-          to learn how to do them and also save your daily workouts and rate
-          how you felt after each day. You will also be able to connect with others.
-        </h3>
-        <h5>Come check out what we have to offer!</h5>
-      </h1>
+
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/views/homepage.handlebars">Profile</a> |
+        <a href="/">Profile</a> |
         <button class="no-button" id="logout">Logout</button>
         {{else}}
         <a href="/login">Login Or Sign-up Now!</a>

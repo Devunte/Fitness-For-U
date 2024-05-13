@@ -1,0 +1,28 @@
+{{log this}}
+
+{{#each workouts}}
+  <div class="card">
+    <div class="card-header">
+      <h2>{{name}}</h2>
+    </div>
+    <div class="card-body">
+      <p>{{description}}</p>
+      <p>Date Created: {{format_date date_created}}</p>
+      <p>Created by: </p>
+    </div>
+  </div>
+{{/each}}
+
+<form class="workout-add-form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="workout-name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea id="workout-desc" name="description" rows="4" required></textarea>
+  </div>
+  <button type="submit">Add Workout</button>
+</form>
+
+<script src="/js/exercise.js"></script>

@@ -1,20 +1,26 @@
 [
     {
-        "exercise_category": "Back"
+        "exercise_category": "Back",
+        "href_icon": "https://static.thenounproject.com/png/1830963-200.png"
     },
     {
-        "exercise_category": "Core"
+        "exercise_category": "Core",
+        "href_icon": "https://static.thenounproject.com/png/1830963-200.png"
     },
     {
-        "exercise_category": "Arms"
+        "exercise_category": "Arms",
+        "href_icon": "https://static.thenounproject.com/png/1830963-200.png"
     },
     {
-        "exercise_category": "Legs"
+        "exercise_category": "Legs",
+        "href_icon": "https://static.thenounproject.com/png/1830963-200.png"
     },
     {
-        "exercise_category": "Shoulders"
+        "exercise_category": "Shoulders",
+        "href_icon": "https://static.thenounproject.com/png/1830963-200.png"
     },
     {
-        "exercise_category": "Cardio"
+        "exercise_category": "Cardio",
+        "href_icon": "https://static.thenounproject.com/png/1830963-200.png"
     }
 ]
