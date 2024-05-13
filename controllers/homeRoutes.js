@@ -1,6 +1,5 @@
 const router = require('express').Router();
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 router.get('/', async (req, res) => {
     try {
       res.render('homepage.handlebars');
@@ -8,12 +7,12 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
   });
-=======
 
 
->>>>>>> 0ddfe523f564208aa06ad3d2c09bad690a9e8585
+
+
 module.exports = router;
-=======
+
 const { Exercise, User, Workout } = require('../models');
 
 
@@ -70,23 +69,4 @@ router.get('/workout/:id', async (req,res) => {
 //     })
 // });
 
-
-
-
-
-
-
 module.exports = router;
-
-    
-
-
-
-
-
-
-
-
-    
-
->>>>>>> 1ccb3d29f3b013925f51a064ec472506ae2980a5
