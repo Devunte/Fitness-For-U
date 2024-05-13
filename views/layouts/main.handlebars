@@ -10,25 +10,27 @@
 </head>
 
 <body>
-    <header>
-
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/">Profile</a> |
-        <button class="no-button" id="logout">Logout</button>
-        {{else}}
-        <a href="/login">Login Or Sign-up Now!</a>
-        {{/if}}
-      </nav>
-    </header>
-<main>
-  {{{body}}}
-</main>
+  <header>
+    <nav>
+      <a class="nav-home" href="/">Home</a>
+      <!-- Conditionally render login or logout links -->
+      {{#if logged_in}}
+      <a href="/profile">Profile</a> |
+      <button class="no-button" id="logout">Logout</button>
+      {{else}}
+      <a href="/login">Login</a>
+      {{/if}}
+    </nav>
+  </header>
+  <main>
+    {{{body}}}
+  </main>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <footer><p>Created by: Giga Chads!</p></footer>
+  <footer class="footer">
+    <p>Created by: Giga Chads!</p>
+  </footer>
 </body>
 
 </html>

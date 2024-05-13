@@ -1,0 +1,19 @@
+{{log this}}
+<div class="profile-container">
+    <h1>{{name}}'s Profile</h1>
+    <div class="workouts-section">
+        <h2>My Workouts</h2>
+        {{#if workouts.length}}
+        {{#each workouts}}
+        <div class="workout-card">
+            <h3>{{name}}</h3>
+            <p><strong>Description:</strong> {{description}}</p>
+            <p><strong>Date Created:</strong> {{format_date date_created}}</p>
+            <p><strong>Created by:</strong> {{../name}}</p>
+        </div>
+        {{else}}
+        <p>No workouts found.</p>
+        {{/each}}
+        {{/if}}
+    </div>
+</div>
