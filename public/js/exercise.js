@@ -3,9 +3,9 @@ const newFormHandler = async (event) => {
 
     const name = document.querySelector('#workout-name').value.trim();
     const description = document.querySelector('#workout-desc').value.trim();
-    const url = window.location.href;
-    const params = new URLSearchParams(url);
-    const id = params.get('id');
+    const id = window.location.toString().split('/')[
+        window.location.toString().split('/').length - 1
+    ];
 
     if (name && description) {
         // const id = req.params.id;
@@ -19,7 +19,7 @@ const newFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/exercise');
+            document.location.replace(`/exercise/${id}`);
         } else {
             alert('Failed to create workout');
         }
