@@ -1,4 +1,18 @@
 const router = require('express').Router();
+
+router.get('/', async (req, res) => {
+    try {
+      res.render('homepage.handlebars');
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
+
+
+module.exports = router;
+
 const { Exercise, User, Workout } = require('../models');
 
 
@@ -55,22 +69,4 @@ router.get('/workout/:id', async (req,res) => {
 //     })
 // });
 
-
-
-
-
-
-
 module.exports = router;
-
-    
-
-
-
-
-
-
-
-
-    
-
