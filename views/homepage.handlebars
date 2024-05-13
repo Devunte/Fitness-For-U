@@ -1,24 +1,27 @@
 {{log this}}
 <div>
     <h2>Welcome {{name}}</h2>
-    <div>
+    <div class="row">
         {{#each exercises}}
-            <div class="exercise">
+        <div class="col-md-4">
+            <div class="card">
                 <a href="/exercise/{{id}}">
-                <h2>{{exercise_category}}</h2>
-                <img src="{{href_icon}}" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">{{exercise_category}}</h2>
+                        <img class="card-img-top" src="{{href_icon}}" alt="{{exercise_category}}">
+                    </div>
                 </a>
-                <p></p>
-                {{#if workouts.length}}
-                    <ul>
-                        {{#each workouts}}
-                            <li>{{this.name}} - {{this.description}}</li>
-                        {{/each}}
-                    </ul>
-                {{else}}
-                    <p>No workouts found for this exercise.</p>
-                {{/if}}
             </div>
+            {{!-- {{#if workouts.length}}
+            <ul>
+                {{#each workouts}}
+                <li>{{this.name}} - {{this.description}}</li>
+                {{/each}}
+            </ul>
+            {{else}}
+            <p>No workouts found for this exercise.</p>
+            {{/if}} --}}
+        </div>
         {{/each}}
         {{!-- {{#each exercises}}
         <p>{{exercise_category}}</p>
