@@ -4,8 +4,10 @@
     <div>
         {{#each exercises}}
             <div class="exercise">
+                <a href="/exercise/{{id}}">
                 <h2>{{exercise_category}}</h2>
                 <img src="{{href_icon}}" alt="">
+                </a>
                 <p></p>
                 {{#if workouts.length}}
                     <ul>
