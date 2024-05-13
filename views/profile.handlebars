@@ -10,10 +10,13 @@
             <p><strong>Description:</strong> {{description}}</p>
             <p><strong>Date Created:</strong> {{format_date date_created}}</p>
             <p><strong>Created by:</strong> {{../name}}</p>
+            <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
         </div>
-        {{else}}
-        <p>No workouts found.</p>
-        {{/each}}
-        {{/if}}
+    {{else}}
+    <p>No workouts found.</p>
+    {{/each}}
+    {{/if}}
     </div>
 </div>
+
+<script src="/js/profile.js"></script>
