@@ -13,5 +13,50 @@
         "name": "Squats",
         "description": "Front Squat. Set a barbell on a power rack at about shoulder height. Grab the power with an overhand grip at shoulder width and raise your elbows until your ..",
         "exercise_id": 4
+    },
+    {
+        "name": "Curls",
+        "description": "Hold a dumbbell with your palm facing upward. Slowly curl the weight up by bending your elbow, keeping your elbow close to your body. Then slowly lower the weight to the starting position. You'll feel tension in the muscles in the front of your upper arm.",
+        "exercise_id": 3
+    },
+    {
+        "name": "Walking Lunges",
+        "description": "Stand with your feet hip-width apart, take a step forward with your right foot and then slowly bend both knees until your back knee is just above the floor. Stand back up, take a step forward with your left foot and bend both knees until your back knee is just above the floor. Repeat this forward movement for the entire duration of the set.",
+        "exercise_id":4
+    },
+    {
+        "name": "Reverse Fly",
+        "decription":"Lean forward, letting your arms hang down next to your calves with your elbows slightly bent. Slowly raise the weights until your elbows are level with your shoulders. Then slowly lower the weights to the starting position. You'll feel tension in your shoulders and the muscles across your upper back.Feb 14, 2023",
+        "exercise_id":5
+    },
+    {
+        "name": "Lat Pulldowns",
+        "decription":"Grasp the bar with hands slightly wider than shoulder width and knees slightly bent. Keep your elbows straight and focus on pulling the bar to your hips. Your trunk should stay tall and your head up. Hold for 1 to 2 seconds, keeping your shoulder blades back and down",
+        "exercise_id":1
+    },
+    {
+        "name": "Bent Over Row",
+        "decription":"Lift the bar from the rack, bend forward at the hips, and keep the back straight with a slight bend in the knees. Lower the bar towards the floor until the elbows are completely straight, and keep the back flat as the bar is pulled towards the belly button. Then slowly lower the bar to the starting position and repeat.",
+        "exercise_id":1
+    },
+    {
+        "name": "Plank",
+        "decription":"Get into a push up position, with your elbows under your shoulders and your feet hip-width apart. Bend your elbows and rest your weight on your forearms and on your toes, keeping your body in a straight line. Hold for as long as possible.",
+        "exercise_id":2
+    },
+    {
+        "name": "Bridge",
+        "decription":"Start on your back. Bend your knees and plant your feet on the floor at hip width. Place your hands at your sides, palms down. Tighten your core and glutes.Raise your hips until your knees are in line with your shoulders. Hold for 10 to 30 seconds.Repeat 3 to 5 times.",
+        "exercise_id":2
+    },
+    {
+        "name": "Burpees",
+        "decription":"Stand with feet hip-width apart. Crouch down and place your hands on the floor, directly under your shoulders. Jump your feet back to land in plank position. Then jump your feet back up to meet your hands in the crouched position. Next, simply stand up. Return to the crouch position and repeat.",
+        "exercise_id":6
+    },
+    {
+        "name": "Mountain Climbers",
+        "decription":"Start with your body in a straight line and your hands slightly wider than shoulder-width apart. Keep your toes and balls of the feet touching the floor. Bring one knee up toward the center of your stomach and then quickly alternate between legs. Continue alternating until the set is complete.",
+        "exercise_id":6
     }
 ]
