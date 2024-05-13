@@ -1,20 +1,5 @@
 const router = require('express').Router();
-
-router.get('/', async (req, res) => {
-    try {
-      res.render('homepage.handlebars');
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
-
-
-
-
-module.exports = router;
-
 const { Exercise, User, Workout } = require('../models');
-
 
 router.get('/', async (req, res) => {
     try {
@@ -63,10 +48,14 @@ router.get('/workout/:id', async (req,res) => {
     }
 });
 
-// router.get('/login', async (req,res) => {
-//     if (!req.seesion.logged_in) {
-//         res.render('login');
-//     })
-// });
+router.get('/login', (req, res) => {
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect('/homepage');
+      return;
+    }
+  
+    res.render('login');
+  });
 
 module.exports = router;
