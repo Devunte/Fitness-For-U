@@ -15,7 +15,7 @@ Workout.init(
         allowNull: false,
       },
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(400),
       },
       date_created: {
         type: DataTypes.DATE,
