@@ -14,7 +14,11 @@ Exercise.init(
         exercise_category: {
             type: DataTypes.STRING,
             allowNull: false,
-        }
+        },
+        href_icon: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     },
     {
         sequelize,
